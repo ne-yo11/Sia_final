@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        /* Reset default styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url("login.gif");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: #333;
+        }
+    
+        .container {
+            background: rgba(255, 255, 255, 0.85);
+            width: 100%;
+            max-width: 400px;
+            padding: 25px 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+    
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #d35400;
+            margin-bottom: 20px;
+        }
+    
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+    
+        label {
+            font-size: 14px;
+            font-weight: 500;
+            color: #2c3e50;
+            text-align: left;
+        }
+    
+        input[type="text"],
+        input[type="password"] {
+            padding: 12px;
+            border: 1px solid #bdc3c7;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #2c3e50;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+    
+        input:focus {
+            border-color: #3498db;
+            box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+            outline: none;
+        }
+    
+        button {
+            padding: 12px;
+            background: #e74c3c;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    
+        button:hover {
+            background: #c0392b;
+        }
+    
+        p {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+    
+        p a {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+    
+        p a:hover {
+            color: #3498db;
+            text-decoration: underline;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <h2>Login Form</h2>
+        <form id="loginForm">
+            <label for="email">Email/Phone:</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <p>Don't have an account? <a href="register.html">Register here</a></p>
+    </div>
+
+    <script type="module" src="login.js"></script>
+</body>
+</html>
