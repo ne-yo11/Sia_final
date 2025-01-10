@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <style>
+      /* Reset default styling */
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+  
+      body {
+          font-family: 'Poppins', sans-serif;
+          background-color: #f4f4f9;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+          color: #2c3e50;
+      }
+  
+      .container {
+          background: #ffffff;
+          width: 100%;
+          max-width: 420px;
+          padding: 25px;
+          box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+          border-radius: 12px;
+          text-align: center;
+      }
+  
+      h2 {
+          color: #34495e;
+          font-size: 28px;
+          margin-bottom: 15px;
+      }
+  
+      p {
+          font-size: 16px;
+          margin: 15px 0;
+          color: #7f8c8d;
+      }
+  
+      strong {
+          color: #e74c3c;
+      }
+  
+      ul {
+          list-style-type: none;
+          margin-top: 20px;
+          padding: 0;
+      }
+  
+      ul li {
+          margin: 12px 0;
+      }
+  
+      ul li a {
+          text-decoration: none;
+          color: #2980b9;
+          font-size: 17px;
+          font-weight: 500;
+          transition: color 0.3s ease;
+      }
+  
+      ul li a:hover {
+          color: #3498db;
+          text-decoration: underline;
+      }
+  
+      .actions {
+          margin-top: 25px;
+          border-top: 1px solid #ecf0f1;
+          padding-top: 15px;
+      }
+  
+      .button {
+          display: inline-block;
+          background: #2980b9;
+          color: #ffffff;
+          padding: 10px 20px;
+          border-radius: 8px;
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: bold;
+          transition: background 0.3s ease;
+      }
+  
+      .button:hover {
+          background: #3498db;
+      }
+  
+      /* Responsive Design */
+      @media (max-width: 480px) {
+          .container {
+              padding: 20px;
+          }
+  
+          h2 {
+              font-size: 24px;
+          }
+  
+          p {
+              font-size: 14px;
+          }
+  
+          ul li a {
+              font-size: 15px;
+          }
+  
+          .button {
+              padding: 8px 16px;
+              font-size: 14px;
+          }
+      }
+  </style>
+  
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to Your Dashboard</h2>
+
+        <!-- Display email only -->
+        <p><strong>Email:</strong> <span id="email">Jay@example.com</span></p>
+
+        <!-- Links to other sections of the app -->
+        <div class="actions">
+            <ul>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Firebase Authentication and Session Management -->
+    <script type="module" src="userdashboard.js"></script>
+</body>
+</html>
